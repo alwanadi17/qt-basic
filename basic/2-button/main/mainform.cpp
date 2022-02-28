@@ -16,7 +16,8 @@ void MainForm::setupUi() {
     this->resize(225,100);
     this->setWindowTitle("Close Button");
 
-    button = new QPushButton("Close");
+    button = new QPushButton();
+    button->setText("Close");
     button->move(75,50);
     button->setParent(this);
 
